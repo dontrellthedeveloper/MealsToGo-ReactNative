@@ -1,4 +1,3 @@
-
 import React from "react";
 import { SvgXml } from "react-native-svg";
 import { View } from "react-native";
@@ -39,7 +38,7 @@ export const RestaurantInfoCard = ({ restaurant = {} }) => {
   return (
     <RestaurantCard elevation={5}>
       <View>
-        <Favourite />
+        <Favourite restaurant={restaurant} />
         <RestaurantCardCover key={name} source={{ uri: photos[0] }} />
       </View>
       <Info>
